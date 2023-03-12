@@ -10,7 +10,7 @@ public abstract class Figure implements Comparable<Figure>{
     @Override
     public String toString() {
         
-        return String.format("%10s area: %8.2f", this.getClass().getSimpleName(), area());//this.getClass().getSimpleName() + String.format(" area: %.2f", area());
+        return String.format("%-10s ", this.getClass().getSimpleName());//this.getClass().getSimpleName() + String.format(" area: %.2f", area());
     }
 
 

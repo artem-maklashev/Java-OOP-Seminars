@@ -10,7 +10,7 @@ public abstract class Polygon extends Figure implements Perimetr {
 
     @Override
     public String toString() {
-        return (sides == null) ? "Объект не создан" : super.toString() + " " + String.format("стороны %s", sides.toString());
+        return (sides == null) ? "Объект не создан" : super.toString() + String.format("стороны %-20s", sides.toString());
     }
 
     @Override

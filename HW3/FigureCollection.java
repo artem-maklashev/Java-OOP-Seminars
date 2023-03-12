@@ -63,7 +63,7 @@ public class FigureCollection extends Figure implements Comparator<Figure> {
 
     public void printFigureCollection() {
         for (Figure figure : figCollection) {
-            System.out.println(figure);
+            System.out.printf("%30s площадь %-6.2f\n",figure, figure.area());
         }
     }
 

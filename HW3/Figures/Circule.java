@@ -25,7 +25,7 @@ public class Circule extends Figure implements
     @Override
     public String toString() {
         
-        return super.toString() + String.format(" радиус  %d", radius);
+        return super.toString() + String.format("радиус  %-20d", radius);
     }
     
 }
