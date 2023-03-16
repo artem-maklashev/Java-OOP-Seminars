@@ -5,6 +5,7 @@ import java.util.List;
 import HW3.Figure;
 import HW3.Figures.Polygones.Perimetr;
 
+
 public abstract class Polygon extends Figure implements Perimetr {
     protected List<Integer> sides;
 
