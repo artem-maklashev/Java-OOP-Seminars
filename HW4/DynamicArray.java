@@ -27,6 +27,8 @@ public class DynamicArray<T extends Comparable<T>> implements Numbers {
     }
 
     public void delete(int index) {
+        if (0 > index || index >= length) 
+            throw new IndexOutOfBoundsException("Индекс выходит за пределы массива");
 
         for (int i = index; i < array.length - 1; i++) {
             array[i] = array[i + 1];
@@ -34,6 +36,7 @@ public class DynamicArray<T extends Comparable<T>> implements Numbers {
         array = Arrays.copyOf(array, array.length - 1);
         length--;
     }
+
 
     public void deleteVaues(T value) {
         for (int i = 0; i < array.length; i++) {
